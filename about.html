@@ -9,6 +9,9 @@
         -->
         <meta charset="utf-8"/>
         <title>Krishna Tagdiwala: Personal Website</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
         <link href="css/styles.css" rel = "stylesheet" type="text/css"/>
     </head>
 
@@ -19,7 +22,7 @@
         <hr/>
         <nav>
             <a href="index.html">Home</a>
-            <a href="about.html">About</a>
+            <a href="about.html" class="current-page">About</a>
             <a href="contact.html">Contact</a>
         </nav>
         
@@ -27,7 +30,7 @@
 
         <div id = "content">
             <!-- Table to hold experience data -->
-             <table>
+             <table class = "padded">
                 <tr id = "table-header">
                     <td><strong>Programming Language</strong></td>
                     <td><strong>Years Experience</strong></td>
@@ -46,19 +49,24 @@
                 </tr>
              </table>
 
-             <ul>
-                <li><span class ="hobby">Video games</span>: I own a Wii and an Xbox, but I mostly enjoy playing MarioKart Wii</li>
-                <li><span class ="hobby">Art</span>: I enjoy paper crafting, painting, making ceramics, drawing, and henna</li>
-                <li><span class ="hobby">Music</span>: My favorite genres of music are Jpop, pop, and LoFi. I also play the guitar!</li>
-                <li><span class ="hobby">Programming</span>: I spend at least two hours every day using and learning programming languages</li>
+             <ul class = "padded">
+                <li class="text"><span class ="hobby">Video games</span>: I own a Wii and an Xbox, but I mostly enjoy playing MarioKart Wii</li>
+                <li class="text"><span class ="hobby">Art</span>: I enjoy paper crafting, painting, making ceramics, drawing, and henna</li>
+                <li class="text"><span class ="hobby">Music</span>: My favorite genres of music are Jpop, pop, and LoFi. I also play the guitar!</li>
+                <li class="text"><span class ="hobby">Programming</span>: I spend at least two hours every day using and learning programming languages</li>
              </ul>
         </div>
         
-        <footer>
-             <hr>
-             CST336: Internet Programming. 2024&copy; Tagdiwala <br>
-             <strong>Disclaimer:</strong> The information on this webpage is fictitious.<br>
-             It is used for academic purposes only.
+        <footer class = .footer>
+            <hr>
+            <div id="footer-content">
+                <img class = "padded" id="csumb-logo" src="img/CSUMBLogo_Circle.png" alt="CSUMB Logo"/><br>
+                <div class = "padded">
+                    CST336: Internet Programming. 2024&copy; Tagdiwala <br>
+                    <strong>Disclaimer:</strong> The information on this webpage may be fictitious.<br>
+                    It is used for academic purposes only.
+                </div>
+            </div>
         </footer>
         
     </body>

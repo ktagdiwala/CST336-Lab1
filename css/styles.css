@@ -1,10 +1,30 @@
 body {
-    background-color: black;
-    color: white
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    min-height: 100vh;
+    position: relative;
+    background-color: #3B3853;
+    color: #fff8e7;
+    font-family: "Alegreya", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+hr {
+    width: 100%;
+    color: #A294AD;
 }
 
 header, main, nav, footer {
     text-align: center;
+}
+
+.text {
+    font-size: 1.3em;
 }
 
 nav a { /* links within "nav" container */
@@ -16,9 +36,15 @@ nav a { /* links within "nav" container */
 }
 
 nav a:hover {   /* pseudo class */
-    border-bottom: 2px orange solid;
+    border-bottom: 2px #ffb0b5 solid;
     font-size: 2em;
     transition: .9s;    /* transition effect */
+}
+
+.current-page {
+    color: #ffb0b5;
+    font-weight: 600;
+    text-decoration: underline;
 }
 
 main {
@@ -26,25 +52,52 @@ main {
     justify-content: center;
 }
 
+main > div { /* Child combinator: div within main */
+    align-content: center;
+}
+
+footer {
+    margin-top: auto;
+    bottom: 0;
+    width: 100%;
+    text-align: start;
+    padding: 10px;
+    color: #CEB9C2
+}
+
+#footer-content { /* displays image and text side-by-side */
+    display: flex;
+    justify-content: center;
+}
+
 table {
     margin: 0px auto;
+    align-content: center;
 }
 
 td {
     padding-right: 10px;
     font-size: 1.3em;
+    align-content: center;
 }
 
 td strong {
-    color:orange;
+    color:#fff8e7;
+    font-weight: 500;
+}
+
+em strong {
+    font-weight: 600;
 }
 
 #table-header {
-    background-color: #351a00;
+    background-color: #5D5A75;
+    align-content: center;
 }
 
 .table-row {
-    background-color: #753900;
+    background-color: #A294AD;
+    align-content: center;
 }
 
 ul {
@@ -54,9 +107,32 @@ ul {
 }
 
 .hobby {
-    color: yellow;
+    color: #ffb0b5;
 }
 
 #content {
     text-align: center;
+}
+
+h1 {
+  font-family: "Alegreya", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 3em;
+  color: #FFE4E1;
+}
+
+#csumb-logo {
+    width: 80px;
+    height: auto;
+}
+
+.photo {
+    border: 5px #FFE4E1 solid;
+    box-shadow: -2px 2px 20px black;
+}
+
+.padded {
+    padding: 10px;
 }

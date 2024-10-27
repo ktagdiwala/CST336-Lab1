@@ -9,6 +9,10 @@
         -->
         <meta charset="utf-8"/>
         <title>Krishna Tagdiwala: Personal Website</title>
+        <link rel="icon" type="image/x-icon" href="/img/anya_clap.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
         <link href="css/styles.css" rel = "stylesheet" type="text/css"/>
     </head>
 
@@ -18,7 +22,7 @@
         </header>
         <hr/>
         <nav>
-            <a href="index.html">Home</a>
+            <a href="index.html" class="current-page">Home</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
         </nav>
@@ -27,29 +31,34 @@
 
         <main>
             <figure>
-                <img src="img/krishna_tagdiwala.jpg" alt="Picture of Krishna Tagdiwala"/>
+                <img class = "photo" src="img/krishna_tagdiwala.jpg" alt="Picture of Krishna Tagdiwala"/>
             </figure>
 
             <div>
-                Hello!<br>
-                <p>Thank you for visiting my professional portfolio website.</p>
-                <p>I am a Data Scientist and have been recently hired at Cisco Systems Inc.</p>
-                <p>Feel free to contact me!</p>
+                <p class="text">Hello!</p><br>
+                <p class="text">Thank you for visiting my professional portfolio website.</p>
+                <p class="text">I am a Data Scientist and have been recently hired at Cisco Systems Inc.</p>
+                <p class="text">Feel free to contact me!</p>
 
                 <br><br>
 
-                <em>"The journey of a thousand miles begins with a <strong>single step</strong>"</em>
+                <em class="text">"The journey of a thousand miles begins with a <strong>single step</strong>"</em>
                 <br>
-                - Lao Tzu
+                <p class="text">- Lao Tzu</p>
 
             </div>
         </main>
         
-        <footer>
-             <hr>
-             CST336: Internet Programming. 2024&copy; Tagdiwala <br>
-             <strong>Disclaimer:</strong> The information on this webpage is fictitious.<br>
-             It is used for academic purposes only.
+        <footer class = .footer>
+            <hr>
+            <div id="footer-content">
+                <img class = "padded" id="csumb-logo" src="img/CSUMBLogo_Circle.png" alt="CSUMB Logo"/><br>
+                <div class = "padded">
+                    CST336: Internet Programming. 2024&copy; Tagdiwala <br>
+                    <strong>Disclaimer:</strong> The information on this webpage may be fictitious.<br>
+                    It is used for academic purposes only.
+                </div>
+            </div>
         </footer>
         
     </body>
